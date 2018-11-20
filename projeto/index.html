@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout</title>
+	<link rel="stylesheet" href="css/style.css">
+		<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+</head>
+<body>
+
+	<header class="cabecalho">
+			<a href="index.html"><img src="imagem/logo.png" alt="Logotipo do site"></a>
+		</header>
+	<!-- menu -->
+
+		<div class="menu-overlay"></div>
+		<nav class="menu">
+		<a href="#" class="menu-open">&#9776; Menu</a>
+
+		<div class="side-menu-wrapper">
+		<a href="#" class="menu-close">×</a>
+		<ul>
+		<li><a href="index.html"  rel="nofollow">Home</a></li>
+		<li><a href="sobre.html"  rel="nofollow">Sobre</a></li>
+		<li><a href="" class="Detalhes">Sagas</a>
+		  <ul class="joao">
+		    <li><a href="freeza.html"  class="link">Freeza</a></li>
+		    <li><a href="cell.html"  class="link">Cell</a></li>
+		    <li><a href="boo.html" class="link">Majin Boo</a></li>
+		  </ul>
+		</li>
+		<li><a href="contato.html"  rel="nofollow">Contato</a></li>
+		</ul>
+		</div>
+		</nav>
+		<!--Fim do menu-->
+
+
+	<div class="Layout" style="background-image: url('imagem/dragonball.jpg');">
+	<p style="font-size:45px; line-height: 55px;font-weight: 700">Site dedicado à Dragon Ball e as suas principais sagas; Freeza, Cell e Boo</p>
+	</div>
+
+	<div class="DivTexto1">
+		<div class="Destaque">
+			<img src="imagem/goku.jpg" alt="">
+			<h2>Dragon Ball</h2>
+			<p class="textohome">Dragon Ball é uma franquia de mídia japonesa criada por Akira Toriyama. Originalmente iniciada com uma série de mangá que foi escrita e ilustrada por Toriyama, teve os seus capítulos serializados na revista Weekly Shonen Jump de 1984 a 1995, com os seus 519 capítulos compilados em 42 volumes tankōbon e publicados pela editora Shueisha. Dragon Ball foi inicialmente inspirado pelo clássico romance chinês Jornada ao Oeste. A série segue as aventuras do protagonista, Son Goku, desde sua infância até a idade adulta enquanto ele treina artes marciais e explora o mundo em busca de sete esferas conhecidas como as Esferas do Dragão, que convocam um dragão que concede um desejo quando reunidas. Ao longo de sua jornada, Goku faz vários amigos e luta contra uma grande variedade de vilões, muitos dos quais também procuram as Esferas do Dragão.</p>
+		</div>
+	</div>
+
+
+	<div class="DivTexto2">
+		<div class="Destaque">
+			<h2>Sagas</h2>	
+	</div>
+	</div>
+
+
+		<!--CARROSEL DE IMAGENS-->
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+
+  <a href="freeza.html" ><img src="imagem/freezasl.jpg" alt="" style="width:100%"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+   <a href="cell.html" ><img src="imagem/cell.jpg" alt="" style="width:100%"></a>
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+   <a href="boo.html" ><img src="imagem/majin.jpg" alt="" style="width:100%"></a>
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	<!--Fim do Conteúdo-->
+	<!-- REDES SOCIAIS -->
+		<div class="social">
+			<ul>
+				<li><a href="https://www.facebook.com" target="blank" class="icon-facebook"><img src="imagem/facebook.png" alt=""></a></li>
+				<li><a href="https://plus.google.com/discover" target="blank" class="icon-twitter"><img src="imagem/google.png" alt=""></a></li>
+				<li><a href="https://www.skype.com" target="blank" class="icon-skype"><img src="imagem/skype.png" alt=""></a></li>
+				<li><a href="https://www.twitter.com" target="blank" class="icon-gmail"><img src="imagem/twitter.png" alt=""></a></li>
+			</ul>
+		</div>
+
+		<!-- rodapé -->
+		<footer>
+			<p>©2018 - Fabrício Ferreira de Oliveira</p>			
+		</footer>
+
+	
+		
+	
+<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script>	
+
+<script src="js/menulateral.js"></script>
+<script src="js/chibungo.js"></script>
+
+
+
+	
+
+</body>
+</html>

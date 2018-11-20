@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>	Contato</title>
+	<link rel="stylesheet" href="css/style.css">
+		<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	
+</head>
+<body>
+	<!--Cabeçalho-->
+	<header class="cabecalho">
+			
+			<a href="index.html"><img src="imagem/logo.png" alt="Logotipo do site"></a>
+		</header>
+
+		<!-- menu -->
+
+		<div class="menu-overlay"></div>
+		<nav class="menu">
+		<a href="#" class="menu-open">&#9776; Menu</a>
+
+		<div class="side-menu-wrapper">
+		<a href="#" class="menu-close">×</a>
+		<ul>
+		<li><a href="index.html"  rel="nofollow">Home</a></li>
+		<li><a href="sobre.html"  rel="nofollow">Sobre</a></li>
+		<li><a href="" class="Detalhes">Sagas</a>
+		  <ul class="joao">
+		    <li><a href="freeza.html"  class="link">Freeza</a></li>
+		    <li><a href="cell.html"  class="link">Cell</a></li>
+		    <li><a href="boo.html" class="link">Majin Boo</a></li>
+		  </ul>
+		</li>
+		<li><a href="contato.html"  rel="nofollow">Contato</a></li>
+		</ul>
+		</div>
+		</nav>
+		<!--Fim do menu-->
+		<!--Conteúdo-->
+		<div id="contato">
+			<h1>Contato</h1>
+			<form action="formulario.php" method="POST">
+				<input type="text" name="nome" placeholder="nome">
+				<input type="text" name="email" placeholder="email">
+				<textarea name="mensagem" placeholder="mensagem"></textarea>
+				<input type="submit" value="Enviar">
+
+			</form>
+		</div>
+		<!-- rodapé -->
+		<footer class="rdpcell">
+			<p>©2018 - Fabrício Ferreira de Oliveira</p>			
+		</footer>
+
+		<!-- REDES SOCIAIS -->
+		<div class="social">
+			<ul>
+				<li><a href="https://www.facebook.com" target="blank" class="icon-facebook"><img src="imagem/facebook.png" alt=""></a></li>
+				<li><a href="https://plus.google.com/discover" target="blank" class="icon-twitter"><img src="imagem/google.png" alt=""></a></li>
+				<li><a href="https://www.skype.com" target="blank" class="icon-skype"><img src="imagem/skype.png" alt=""></a></li>
+				<li><a href="https://www.twitter.com" target="blank" class="icon-gmail"><img src="imagem/twitter.png" alt=""></a></li>
+			</ul>
+		</div>
+
+
+
+		<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script>	
+
+<script src="js/menulateral.js"></script>
+
+
+</body>
+</html>
